@@ -119,7 +119,7 @@ padding: 1rem;
   right: 0;
 }
 .cover-y-scroll {
-  max-width: 400px;
+  max-width: 500px;
   margin-right: auto;
   margin-left: auto;
   scroll-behavior: smooth;
@@ -301,7 +301,7 @@ display: flex;
     display: none;
   }
   .cover-y-scroll {
-    max-width: 700px;
+    max-width: 500px;
     margin-right: auto;
     margin-left: auto;
     scroll-behavior: smooth;
@@ -498,6 +498,21 @@ p {
   animation: fadeIn 0.5s;
   background-color: #e4e1e0c7;
   height: 100%;
+}
+
+#cycling, #streetfood, #yoga, #bracelet, #khmerclass, #socialnight, #movienight, #poolparty {
+  display: none;
+}
+
+#cycling:target, #streetfood:target, #yoga:target, #bracelet:target, #khmerclass:target, #socialnight:target, #movienight:target, #poolparty:target {
+  position: relative;
+  display: block;
+  margin-top: -1.8rem;
+  margin-left: 0.5rem;
+  width: 98%;
+  height: 5rem;
+  background-color: #051813;
+  margin-bottom: 0.5rem;
 }
 
 @keyframes fadeIn {
