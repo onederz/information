@@ -469,12 +469,12 @@ p {
   filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 }
 
-#show-banteaysrei, #show-bengmealea, #show-kohker {
+#show-banteaysrei, #show-bengmealea, #show-kohker, #show-kampongphluk, #show-ceramic, #show-phare, #show-cooking {
   position: absolute;
   opacity: 0;
 }
 
-#show-banteaysrei:target, #show-bengmealea:target, #show-kohker:target {
+#show-banteaysrei:target, #show-bengmealea:target, #show-kohker:target, #show-kampongphluk:target, #show-ceramic:target, #show-phare:target, #show-cooking:target {
   font-size: 13px;
   background-color: #205164;
   height: 100%;
@@ -511,8 +511,10 @@ p {
   margin-left: 0.5rem;
   width: 98%;
   height: 5rem;
-  background-color: #051813;
+  background-color: #0d3247;
   margin-bottom: 0.5rem;
+  z-index: -1;
+  font-size: 13px;
 }
 
 @keyframes fadeIn {
@@ -543,14 +545,28 @@ p {
 }
 
 .aty-week {
+  margin-top: 0.2rem;
   position: absolute;
   background-color: rgb(49, 92, 92);
-  width: 60%;
+  width: 99%;
   height: 2.5rem;
-  margin-left: 9rem;
-  padding-left: 1rem;
+  margin-left: 0.5rem;
+  padding-left: 9.5rem;
   font-size: 12px;
   font-weight: bold;
+  animation: changeBackgroundColor 7s infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #144926;
+  }
+  50% {
+    background-color: #304a63;
+  }
+  100% {
+    background-color: #144926;
+  }
 }
 
 .week-aty {
