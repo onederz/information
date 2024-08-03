@@ -152,12 +152,12 @@ function showhide() {
     loop: true,
     slidesPerView: 1.3,
     centeredSlides: true,
-    speed: 300,
+    speed: 2000,
     grabCursor: true,
     parallax: true,
-    autoplay: {
+    /* autoplay: {
       delay: 5000,
       disableOnInteraction: false,
-    },
+    },*/
   });
   

@@ -12,7 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js" integrity="sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>Navbar</title>
+    <title>Onederz Information</title>
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -36,28 +36,29 @@
                 <li></li>
         </ul>
 </div >
+<div class="body">
     <div class="navigation">
       <ul>
         <li class="list active" data-color="#dc143c">
-          <a href="#home">
+          <a href="#home" class="a">
             <span class="icon"><i class="far fa-home"></i></span>
             <span class="title">Home</span>
           </a>
         </li>
         <li class="list" data-color="#05c46b">
-          <a href="#tour">
+          <a href="#tour" class="a">
             <span class="icon"><i class="far fa-flag"></i></span>
             <span class="title">TOUR</span>
           </a>
         </li>
         <li class="list" data-color="#0fbcf9">
-          <a href="#activity">
+          <a href="#activity" class="a">
             <span class="icon"><i style="padding-left: 0.3rem;" class="far fa-user-clock"></i></span>
             <span class="title">ACTIVITY</span>
           </a>
         </li>
         <li class="list" data-color="#ffa801">
-          <a href="#bus">
+          <a href="#bus" class="a">
             <span class="icon"><i style="padding-left: 0.1rem;"  class="far fa-bus"></i></span>
             <span class="title">BUS</span>
           </a>
@@ -667,7 +668,77 @@
     </section>
     </div>
     </div>
-        <div id="tour">
+        <div id="tour" style="position: relative;">
+            <div id="popup-srg">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Small Circuit Sunrise with English Guide</p>
+                <p>- 12 USD / person</p>
+                <p>- Shared with other poeple</p>
+                <p>- Departure at 4:30 AM</p>
+                <p>- Dureation 7 - 8 hours</p>
+                <br>
+                <p>* Temple pass is excluded.</p>
+                <br>
+                <p>The Small Circuit Tour we will visit :</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-sr">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Small Circuit Tour Sunrise</p>
+                <p>- 6 USD / person</p>
+                <p>- Shared with other poeple</p>
+                <p>- Departure at 4:30 AM</p>
+                <p>- Dureation 6 - 7 hours</p>
+                <br>
+                <p>* Temple pass is excluded.</p>
+                <br>
+                <p>The Small Circuit Tour we will visit :</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-s">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Small Circuit Tour</p>
+                <p>- 15 USD / Tuk Tuk (max: 3 people) </br>(3 USD extra sunset or sunrise)</p>
+                <p>- Private Transportation</p>
+                <p>- You can choose departure time</p>
+                <p>- Dureation 5 - 6 hours</p>
+                <br>
+                <p>* Temple pass is excluded.</p>
+                <br>
+                <p>The Small Circuit Tour we will visit :</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-gs">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Grand Circuit Tour Sunset</p>
+                <p>- 7 USD / person</p>
+                <p>- Shared with other poeple</p>
+                <p>- Departure at 12:30 PM</p>
+                <p>- Dureation 6 - 7 hours</p>
+                <br>
+                <p>* Temple pass is excluded.</p>
+                <br>
+                <p>The Grand Circuit Tour we will visit :</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-g">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Grand Circuit Tour</p>
+                <p>- 18 USD / Tuk Tuk (max: 3 people) </br>(3 USD extra sunset or sunrise)</p>
+                <p>- Private Transportation</p>
+                <p>- You can choose departure time</p>
+                <p>- Dureation 4 - 5 hours</p>
+                <br>
+                <p>* Temple pass is excluded.</p>
+                <br>
+                <p>The Grand Circuit Tour we will visit :</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
             <div class="main-wrapper bg-tour1">
                 <div class="tour-name">Popular Tour In Onederz Siem Reap</div>
                 <div class="section slideStyle is--black">
@@ -675,9 +746,9 @@
                       <div role="list" class="swiper-wrapper is-gallery">
                         <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                <a href="#popup-srg"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
                                   src="tour/2.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">2. Sunrise Small Tour With Guide</div>
@@ -685,9 +756,9 @@
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                               <a href="#popup-sr"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
                                   src="tour/1.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">1. Sunrise Small Tour</div>
@@ -695,9 +766,9 @@
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
+                               <a href="#popup-s"><img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
                                  src="tour/3.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">3. Small Tour</div>
@@ -705,9 +776,9 @@
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                <a href="#popup-srg"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
                                   src="tour/2.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">2. Sunrise Small Tour With Guide</div>
@@ -715,9 +786,9 @@
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                <a href="#popup-sr"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
                                   src="tour/1.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">1. Sunrise Small Tour</div>
@@ -725,9 +796,9 @@
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
+                                <a href="#popup-s"><img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
                                  src="tour/3.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">3. Small Tour</div>
@@ -744,9 +815,9 @@
                       <div role="list" class="swiper-wrapper is-gallery">
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                               <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
                                   src="tour/4.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">1. Sunset Grand Tour</div>
@@ -754,9 +825,9 @@
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
                                   src="tour/5.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">2. Grand Tour</div>
@@ -764,19 +835,21 @@
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
+                                <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
                                  src="tour/4.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">1. Sunset Grand Tour</div>
                             </div>
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper"><img data-swiper-parallax-x="0%" loading="lazy"
+                            <div class="gallery-img__wrapper">
+                                <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy"
                                   alt="Caption goes here"
                                   src="tour/5.png"
-                                  class="gallery-img" /></div>
+                                  class="gallery-img" /></a>
+                                </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">2. Grand Tour</div>
                             </div>
@@ -994,8 +1067,6 @@
                 <a href="#airport" style="text-decoration: none;"><p class="link2">Siem Reap Airport</p></a>
             </div>
             <div class="bus-right">
-                <div style="position: absolute; z-index: -1;"><img src="bg-image/bg-bus.png" alt="" width="100%"></div>
-                <div style="position: absolute; z-index: -1; bottom: 7rem;"><img src="img/airportbus.png" alt="" width="100%"></div>
                     <div id="phnompenhday">
                         <div style="text-align: center; width: 100%; height: 1.5rem; background-color: rgba(204, 211, 217, 0.716); color: rgb(31, 61, 73);"><b>To Phnom Penh (Day Bus)</b></div>
                     <div class="card" style="max-width: 500px; height: 130px;">
@@ -1874,6 +1945,7 @@
         
         </div></div>
     </div>
+</div>
   <script src="app.js"></script>
   </body>
 </html>
