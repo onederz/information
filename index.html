@@ -4,13 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js" integrity="sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Onederz Information</title>
     <link
@@ -70,602 +65,653 @@
     <div class="main-container">
         <div id="home">
             <div class="section-y" id="home">
-    <section>
+<div style="margin: 0.5rem;"><img src="img/logo white.png" alt="" width="100px" style="padding-right: 0.5rem;"><font style="color: rgb(247, 56, 56);">Siem Reap</font></div>
     
         <div class="slide-container">
     <div id="slide-event-today">
-        <div style="max-width: 350px; height: 20px; margin-left: auto; margin-right: auto; font-weight: bold; color: rgb(37, 124, 88); font-size: 15px; display: flex; position: relative;"><p style="width: 220px; background-color: aliceblue;padding-left: 0.5rem; padding-right: 0.6rem; border-radius: 0.5rem; height: 23px;">☛ Today Activities</p>&nbsp;<p style="text-align: end;font-size: 15px;font-weight: 600; color: rgb(255, 255, 255); background-color:  rgb(162, 48, 16); padding-left: 0.5rem; padding-right: 0.6rem; border-radius: 0.5rem; height: 23px;"> <span id="current_day"></span> <span id="current_month"></span> <span id="current_year"></span></p></div>
+ <div class="date-today"> Today Activity : <span id="current_day"></span> <span id="current_month"></span> <span id="current_year"></span></div>
             <div class="0 slide-event" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-0" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#bracelet"><img class="d-block img-fluid" src="slide/bracelet.jpg" alt="slide" loading="lazy"></a>
+
+                <div class="main-wrapper">
+                    <div class="section slideStyle is--black">
+                       <div class="swiper swiperParallax is-gallery2">
+                          <div role="list" class="swiper-wrapper is-gallery2">
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#bracelet"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/bracelet.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/streetfood.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/movienight.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
                           </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#streetfood"><img class="d-block img-fluid" src="slide/streetfood.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#movienight"><img class="d-block img-fluid" src="slide/movienight.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-0" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-0" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-0" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-0" data-slide-to="1"></li>
-                                <li data-target="#carousel-0" data-slide-to="2"></li>
-                                <li data-target="#carousel-0" data-slide-to="3"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
+                       </div>
+                    </div>
+                 </div>
           
             </div>
             <div class="1" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-1" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#yoga"><img class="d-block img-fluid" src="slide/yoga.jpg" alt="slide" loading="lazy"></a>
+
+                <div class="main-wrapper">
+                    <div class="section slideStyle is--black">
+                       <div class="swiper swiperParallax is-gallery2">
+                          <div role="list" class="swiper-wrapper is-gallery2">
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/yoga.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/cycling.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/social.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
                           </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#cycling"><img class="d-block img-fluid" src="slide/cycling.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                          <a href="#socialnight"><img class="d-block img-fluid" src="slide/social.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-1" data-slide-to="2"></li>
-                                <li data-target="#carousel-1" data-slide-to="3"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
+                       </div>
+                    </div>
+                 </div>                
+
             </div>
             <div class="2 slide-event" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-2" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#khmerclass"><img class="d-block img-fluid" src="slide/khmerclass.jpg" alt="slide" loading="lazy"></a>
+                <div class="main-wrapper">
+                    <div class="section slideStyle is--black">
+                       <div class="swiper swiperParallax is-gallery2">
+                          <div role="list" class="swiper-wrapper is-gallery2">
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/khmerclass.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/poolparty.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/khmerclass.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/poolparty.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
                           </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#poolparty"><img class="d-block img-fluid" src="slide/poolparty.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-2" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-2" data-slide-to="1"></li>
-                                <li data-target="#carousel-2" data-slide-to="2"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
+                       </div>
+                    </div>
+                 </div>
           
             </div>
             <div class="3 slide-event" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-3" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#bracelet"><img class="d-block img-fluid" src="slide/bracelet.jpg" alt="slide" loading="lazy"></a>
+                <div class="main-wrapper">
+                    <div class="section slideStyle is--black">
+                       <div class="swiper swiperParallax is-gallery2">
+                          <div role="list" class="swiper-wrapper is-gallery2">
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/bracelet.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/streetfood.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/social.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
                           </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#streetfood"><img class="d-block img-fluid" src="slide/streetfood.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#socialnight"><img class="d-block img-fluid" src="slide/social.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-3" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-3" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-3" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-3" data-slide-to="1"></li>
-                                <li data-target="#carousel-3" data-slide-to="2"></li>
-                                <li data-target="#carousel-3" data-slide-to="3"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
-                
-          
+                       </div>
+                    </div>
+                 </div>
+
             </div>
             <div class="4 slide-event" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-4" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#cycling"><img class="d-block img-fluid" src="slide/cycling.jpg" alt="slide" loading="lazy"></a>
+                <div class="main-wrapper">
+                    <div class="section slideStyle is--black">
+                       <div class="swiper swiperParallax is-gallery2">
+                          <div role="list" class="swiper-wrapper is-gallery2">
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/cycling.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/movienight.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/cycling.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/movienight.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
                           </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#movienight"><img class="d-block img-fluid" src="slide/movienight.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-4" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-4" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-4" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-4" data-slide-to="1"></li>
-                                <li data-target="#carousel-4" data-slide-to="2"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
+                       </div>
+                    </div>
+                 </div>
           
             </div>
             <div class="5 slide-event" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-5" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#yoga"><img class="d-block img-fluid" src="slide/yoga.jpg" alt="slide" loading="lazy"></a>
+                <div class="main-wrapper">
+                    <div class="section slideStyle is--black">
+                       <div class="swiper swiperParallax is-gallery2">
+                          <div role="list" class="swiper-wrapper is-gallery2">
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/yoga.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/khmerclass.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/poolparty.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
                           </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#khmerclass"><img class="d-block img-fluid" src="slide/khmerclass.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#poolparty"><img class="d-block img-fluid" src="slide/poolparty.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-5" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-5" data-slide-to="1"></li>
-                                <li data-target="#carousel-5" data-slide-to="2"></li>
-                                <li data-target="#carousel-5" data-slide-to="3"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
+                       </div>
+                    </div>
+                 </div>
+
             </div>
             <div class="6 slide-event" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-6" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#cycling"><img class="d-block img-fluid" src="slide/cycling.jpg" alt="slide" loading="lazy"></a>
+
+                <div class="main-wrapper">
+                    <div class="section slideStyle is--black">
+                       <div class="swiper swiperParallax is-gallery2">
+                          <div role="list" class="swiper-wrapper is-gallery2">
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/cycling.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/social.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                   <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/cycling.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/social.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
+                             <div role="listitem" class="swiper-slide is-gallery2">
+                                <div class="gallery-img__wrapper2">
+                                    <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                                      src="slide/floating.jpg"
+                                      class="gallery-img" /></a>
+                                </div>
+                             </div>
                           </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#socialnight"><img class="d-block img-fluid" src="slide/social.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-6" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-6" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-6" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-6" data-slide-to="1"></li>
-                                <li data-target="#carousel-6" data-slide-to="2"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
+                       </div>
+                    </div>
+                 </div>
           
             </div>
     </div>
     
     <div id="slide-event-tomorrow">
-        <div style="max-width: 350px; height: 20px; margin-left: auto; margin-right: auto; font-weight: bold; color: rgb(212, 122, 19); font-size: 15px; display: flex; position: relative;"><p style="width: 220px;background-color: aliceblue; padding-left: 0.5rem; padding-right: 0.6rem; border-radius: 0.5rem; height: 23px;">☛ Tomorrow Activities</p>&nbsp;<p style="text-align: end;font-size: 15px;font-weight: 600; color: rgb(255, 255, 255); background-color: rgb(162, 48, 16); padding-left: 0.5rem; padding-right: 0.6rem; border-radius: 0.5rem; height: 23px;"> <span id="current_day_tmr"></span> <span id="current_month_tmr"></span> <span id="current_year_tmr"></span></p></div>
-            <div id="sun" class="slide-event 6" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-0-1" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#bracelet"><img class="d-block img-fluid" src="slide/bracelet.jpg" alt="slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#streetfood"><img class="d-block img-fluid" src="slide/streetfood.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#movienight"><img class="d-block img-fluid" src="slide/movienight.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-0-1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-0-1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-0-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-0-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-0-1" data-slide-to="2"></li>
-                                <li data-target="#carousel-0-1" data-slide-to="3"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
-          
-            </div>
-            <div id="mon" class="slide-event 0" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-1-1" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#yoga"><img class="d-block img-fluid" src="slide/yoga.jpg" alt="slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#cycling"><img class="d-block img-fluid" src="slide/cycling.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#socialnight"><img class="d-block img-fluid" src="slide/social.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-1-1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-1-1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-1-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-1-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-1-1" data-slide-to="2"></li>
-                                <li data-target="#carousel-1-1" data-slide-to="3"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
-            </div>
-            <div id="tue" class="slide-event 1" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-2-1" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#khmerclass"><img class="d-block img-fluid" src="slide/khmerclass.jpg" alt="slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#poolparty"><img class="d-block img-fluid" src="slide/poolparty.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-2-1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-2-1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-2-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-2-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-2-1" data-slide-to="2"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
-          
-            </div>
-            <div id="wed" class="slide-event 2" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-3-1" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#bracelet"><img class="d-block img-fluid" src="slide/bracelet.jpg" alt="slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#streetfood"><img class="d-block img-fluid" src="slide/streetfood.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#socialnight"><img class="d-block img-fluid" src="slide/social.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-3-1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-3-1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-3-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-3-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-3-1" data-slide-to="2"></li>
-                                <li data-target="#carousel-3-1" data-slide-to="3"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
-                
-          
-            </div>
-            <div id="thu" class="slide-event 3" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-4-1" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#cycling"><img class="d-block img-fluid" src="slide/cycling.jpg" alt="slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#movienight"><img class="d-block img-fluid" src="slide/movienight.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-4-1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-4-1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-4-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-4-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-4-1" data-slide-to="2"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
-          
-            </div>
-            <div id="fri" class="slide-event 4" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-5-1" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#yoga"><img class="d-block img-fluid" src="slide/yoga.jpg" alt="slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#khmerclass"><img class="d-block img-fluid" src="slide/khmerclass.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#poolparty"><img class="d-block img-fluid" src="slide/poolparty.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-5-1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-5-1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-5-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-5-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-5-1" data-slide-to="2"></li>
-                                <li data-target="#carousel-5-1" data-slide-to="3"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
-            </div>
-            <div id="sat" class="slide-event 5" style="display:none">
-                <section class="mb-5">
-                    <div id="carousel-6-1" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox">
-                
-                          <div class="carousel-item active">
-                            <a href="#cycling"><img class="d-block img-fluid" src="slide/cycling.jpg" alt="slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#socialnight"><img class="d-block img-fluid" src="slide/social.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                          
-                          <div class="carousel-item">
-                            <a href="#floatingvillage"><img class="d-block img-fluid" src="slide/floating.jpg" alt="Slide" loading="lazy"></a>
-                          </div>
-                
-                        </div><!-- e carousel-inner -->
-                        
-                        <a class="carousel-control-prev" href="#carousel-6-1" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#carousel-6-1" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only"></span>
-                        </a>
-                        <div class="slide-dot">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-6-1" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-6-1" data-slide-to="1"></li>
-                                <li data-target="#carousel-6-1" data-slide-to="2"></li>
-                            </ol>
-                        </div>   
-                    </div><!-- e carousel -->
-                </section><!-- e section -->
-          
-            </div>
+<div class="date-tmr"> Tomorrow Activity : <span id="current_day_tmr"></span> <span id="current_month_tmr"></span> <span id="current_year_tmr"></span></div>
+<div class="6 slide-event" style="display:none">
+
+    <div class="main-wrapper">
+        <div class="section slideStyle is--black">
+           <div class="swiper swiperParallax is-gallery2">
+              <div role="list" class="swiper-wrapper is-gallery2">
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/bracelet.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/streetfood.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/movienight.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+</div>
+<div class="0" style="display:none">
+
+    <div class="main-wrapper">
+        <div class="section slideStyle is--black">
+           <div class="swiper swiperParallax is-gallery2">
+              <div role="list" class="swiper-wrapper is-gallery2">
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/yoga.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/cycling.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/social.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>                
+
+</div>
+<div class="1 slide-event" style="display:none">
+    <div class="main-wrapper">
+        <div class="section slideStyle is--black">
+           <div class="swiper swiperParallax is-gallery2">
+              <div role="list" class="swiper-wrapper is-gallery2">
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/khmerclass.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/poolparty.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/khmerclass.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/poolparty.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+</div>
+<div class="2 slide-event" style="display:none">
+    <div class="main-wrapper">
+        <div class="section slideStyle is--black">
+           <div class="swiper swiperParallax is-gallery2">
+              <div role="list" class="swiper-wrapper is-gallery2">
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/bracelet.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/streetfood.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/social.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+</div>
+<div class="3 slide-event" style="display:none">
+    <div class="main-wrapper">
+        <div class="section slideStyle is--black">
+           <div class="swiper swiperParallax is-gallery2">
+              <div role="list" class="swiper-wrapper is-gallery2">
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/cycling.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/movienight.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/cycling.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/movienight.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+</div>
+<div class="4 slide-event" style="display:none">
+    <div class="main-wrapper">
+        <div class="section slideStyle is--black">
+           <div class="swiper swiperParallax is-gallery2">
+              <div role="list" class="swiper-wrapper is-gallery2">
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/yoga.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/khmerclass.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/poolparty.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+</div>
+<div class="5 slide-event" style="display:none">
+
+    <div class="main-wrapper">
+        <div class="section slideStyle is--black">
+           <div class="swiper swiperParallax is-gallery2">
+              <div role="list" class="swiper-wrapper is-gallery2">
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/cycling.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/social.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                       <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/cycling.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/social.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+                 <div role="listitem" class="swiper-slide is-gallery2">
+                    <div class="gallery-img__wrapper2">
+                        <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                          src="slide/floating.jpg"
+                          class="gallery-img" /></a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+</div>
     </div>
     </div>
-    </section>
     </div>
     </div>
         <div id="tour" style="position: relative;">
@@ -675,11 +721,13 @@
                 <p>- 12 USD / person</p>
                 <p>- Shared with other poeple</p>
                 <p>- Departure at 4:30 AM</p>
-                <p>- Dureation 7 - 8 hours</p>
+                <p>- Duration 7 - 8 hours</p>
                 <br>
-                <p>* Temple pass is excluded.</p>
+                <p>* Temple tickets are excluded.</p>
                 <br>
                 <p>The Small Circuit Tour we will visit :</p>
+                <br>
+                <div><img src="tour/smalltour.png" alt="" width="100%" height="100%"></div>
                 </div>
                 <a href="#"><span id="popup-close">✖</span></a>
             </div>
@@ -689,11 +737,13 @@
                 <p>- 6 USD / person</p>
                 <p>- Shared with other poeple</p>
                 <p>- Departure at 4:30 AM</p>
-                <p>- Dureation 6 - 7 hours</p>
+                <p>- Duration 6 - 7 hours</p>
                 <br>
-                <p>* Temple pass is excluded.</p>
+                <p>* Temple tickets are excluded.</p>
                 <br>
                 <p>The Small Circuit Tour we will visit :</p>
+                <br>
+                <p><img src="tour/smalltour.png" alt="" width="100%"></p>
                 </div>
                 <a href="#"><span id="popup-close">✖</span></a>
             </div>
@@ -703,11 +753,13 @@
                 <p>- 15 USD / Tuk Tuk (max: 3 people) </br>(3 USD extra sunset or sunrise)</p>
                 <p>- Private Transportation</p>
                 <p>- You can choose departure time</p>
-                <p>- Dureation 5 - 6 hours</p>
+                <p>- Duration 5 - 6 hours</p>
                 <br>
-                <p>* Temple pass is excluded.</p>
+                <p>* Temple tickets are excluded.</p>
                 <br>
                 <p>The Small Circuit Tour we will visit :</p>
+                <br>
+                <p><img src="tour/smalltour.png" alt="" width="100%"></p>
                 </div>
                 <a href="#"><span id="popup-close">✖</span></a>
             </div>
@@ -717,11 +769,13 @@
                 <p>- 7 USD / person</p>
                 <p>- Shared with other poeple</p>
                 <p>- Departure at 12:30 PM</p>
-                <p>- Dureation 6 - 7 hours</p>
+                <p>- Duration 6 - 7 hours</p>
                 <br>
-                <p>* Temple pass is excluded.</p>
+                <p>* Temple tickets are excluded.</p>
                 <br>
                 <p>The Grand Circuit Tour we will visit :</p>
+                <br>
+                <p><img src="tour/grandtour.png" alt="" width="100%"></p>
                 </div>
                 <a href="#"><span id="popup-close">✖</span></a>
             </div>
@@ -731,11 +785,108 @@
                 <p>- 18 USD / Tuk Tuk (max: 3 people) </br>(3 USD extra sunset or sunrise)</p>
                 <p>- Private Transportation</p>
                 <p>- You can choose departure time</p>
-                <p>- Dureation 4 - 5 hours</p>
+                <p>- Duration 4 - 5 hours</p>
                 <br>
-                <p>* Temple pass is excluded.</p>
+                <p>* Temple tickets are excluded.</p>
                 <br>
                 <p>The Grand Circuit Tour we will visit :</p>
+                <br>
+                <p><img src="tour/grandtour.png" alt="" width="100%"></p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-f">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Floating Village (Kampong Phluk)</p>
+                <p>- 19 USD / person</p>
+                <p>- Shared with other people</p>
+                <p>- Departure at 2:30 pm</p>
+                <p>- Duration 5 hours</p>
+                <br>
+                <p>* Big boat is included. If you would like to get small boat at the forest it is 5.50 USD.</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-bs">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Banteay Srei Temple</p>
+                <p>- 25 USD / Tuk Tuk</p>
+                <p>- Private Transportation</p>
+                <p>- You can choose departure </p>
+                <p>- Duration 4 hours</p>
+                <br>
+                <p>* Temple tickets are excluded.</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-bm">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Beng Mealea Temple</p>
+                <p>- 35 USD / Tuk Tuk</p>
+                <p>- 70 USD / Car</p>
+                <p>- 75 USD / Van</p>
+                <p>- Private Transportation</p>
+                <p>- You can choose departure </p>
+                <p>- Duration 4 hours</p>
+                <br>
+                <p>* Temple tickets are excluded.</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-kk">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Koh Ker Temple</p>
+                <p>- 120 USD / Car</p>
+                <p>- Private Transportation</p>
+                <p>- You can choose departure </p>
+                <p>- Duration 6 hours</p>
+                <br>
+                <p>* Temple tickets are excluded.</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-ph">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Phare the Cambodia Circus</p>
+                <p>- 18 USD Seat C</p>
+                <p>- 28 USD Seat B</p>
+                <p>- 38 USD Seat A</p>
+                <p>- Show start at 8:00 PM</p>
+                <p>- Duration 1 hour</p>
+                <br>
+                <p>* You need to be at the Circus 30 minutes before the show start. Please purchase the seat in advance at the reception.</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-cr">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Khmer Ceramic Pottery Class</p>
+                <p>- 25 USD / person</p>
+                <p>- Morning Time: 08:00 am | 10:00 am </p>
+                <p>- Afternoon Time: 02:00 pm | 04:00 pm</p>
+                <p>- Duration 1 hour 45 minutes</p>
+                <br>
+                <p>* Pottery demonstration. <br>
+                   * Make 5 pieces on the potter wheel.<br>
+                   * Carve your pieces with Cambodian Kbach. <br>
+                   * Get 1 fired piece the day after at 6pm. <br>
+                   * Get a Potters Diploma. <br>
+                   * Community Experience.</p>
+                </div>
+                <a href="#"><span id="popup-close">✖</span></a>
+            </div>
+            <div id="popup-ck">
+                <div style="padding: 0.5rem; padding-top: 2rem;">
+                <p>Khmer Cooking Class</p>
+                <p>- 25 USD / person</p>
+                <p>- Morning Time: 09:30 am - 12:30 pm </p>
+                <p>- Afternoon Time: 12:30 pm - 03:30 pm</p>
+                <p>- Evening Time: 03:30 pm - 06:30 pm</p>
+                <br>
+                <p>* Hotel pickup and drop off by tuktuk <br>
+                   * Experienced local host/guide <br>
+                   * Ingredients for your dishes <br>
+                   * 4 course meal that you have prepared</p>
                 </div>
                 <a href="#"><span id="popup-close">✖</span></a>
             </div>
@@ -745,13 +896,13 @@
                    <div class="swiper swiperParallax is-gallery">
                       <div role="list" class="swiper-wrapper is-gallery">
                         <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper">
-                                <a href="#popup-srg"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                            <a href="#popup-srg"><div class="gallery-img__wrapper">
+                                <img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
                                   src="tour/2.png"
                                   class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
-                               <div class="heading-medium">2. Sunrise Small Tour With Guide</div>
+                               <div class="heading-medium">1. Sunrise Small Tour With Guide</div>
                             </div>
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
@@ -761,42 +912,12 @@
                                   class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
-                               <div class="heading-medium">1. Sunrise Small Tour</div>
+                               <div class="heading-medium">2. Sunrise Small Tour</div>
                             </div>
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
                                <a href="#popup-s"><img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
-                                 src="tour/3.png"
-                                  class="gallery-img" /></a>
-                            </div>
-                            <div class="gallery-info__wrapper">
-                               <div class="heading-medium">3. Small Tour</div>
-                            </div>
-                         </div>
-                         <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper">
-                                <a href="#popup-srg"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
-                                  src="tour/2.png"
-                                  class="gallery-img" /></a>
-                            </div>
-                            <div class="gallery-info__wrapper">
-                               <div class="heading-medium">2. Sunrise Small Tour With Guide</div>
-                            </div>
-                         </div>
-                         <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper">
-                                <a href="#popup-sr"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
-                                  src="tour/1.png"
-                                  class="gallery-img" /></a>
-                            </div>
-                            <div class="gallery-info__wrapper">
-                               <div class="heading-medium">1. Sunrise Small Tour</div>
-                            </div>
-                         </div>
-                         <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper">
-                                <a href="#popup-s"><img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
                                  src="tour/3.png"
                                   class="gallery-img" /></a>
                             </div>
@@ -833,27 +954,6 @@
                                <div class="heading-medium">2. Grand Tour</div>
                             </div>
                          </div>
-                         <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper">
-                                <a href="#popup-gs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
-                                 src="tour/4.png"
-                                  class="gallery-img" /></a>
-                            </div>
-                            <div class="gallery-info__wrapper">
-                               <div class="heading-medium">1. Sunset Grand Tour</div>
-                            </div>
-                         </div>
-                         <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper">
-                                <a href="#popup-g"><img data-swiper-parallax-x="0%" loading="lazy"
-                                  alt="Caption goes here"
-                                  src="tour/5.png"
-                                  class="gallery-img" /></a>
-                                </div>
-                            <div class="gallery-info__wrapper">
-                               <div class="heading-medium">2. Grand Tour</div>
-                            </div>
-                         </div>
                       </div>
                    </div>
                 </div>
@@ -864,66 +964,71 @@
                    <div class="swiper swiperParallax is-gallery">
                       <div role="list" class="swiper-wrapper is-gallery">
                         <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper"><img data-swiper-parallax-x="0%" loading="lazy"
+                            <div class="gallery-img__wrapper">
+                                <a href="#popup-f"><img data-swiper-parallax-x="0%" loading="lazy"
                                   alt="Another photo caption"
                                   src="tour/9.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
-                               <div class="heading-medium">4. Floating Village</div>
+                               <div class="heading-medium">1. Floating Village</div>
                             </div>
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
+                               <a href="#popup-bs"><img data-swiper-parallax-x="0%" loading="lazy" alt="Insert photo title"
                                   src="tour/6.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
-                               <div class="heading-medium">1. Banteay Srei</div>
+                               <div class="heading-medium">2. Banteay Srei</div>
                             </div>
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
                             <div class="gallery-img__wrapper">
-                               <img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
+                                <a href="#popup-bm"><img data-swiper-parallax-x="0%" loading="lazy" alt="Text here"
                                  src="tour/7.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
-                               <div class="heading-medium">2. Beng Mealea</div>
+                               <div class="heading-medium">3. Beng Mealea</div>
                             </div>
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper"><img data-swiper-parallax-x="0%" loading="lazy"
+                            <div class="gallery-img__wrapper">
+                                <a href="#popup-kk"><img data-swiper-parallax-x="0%" loading="lazy"
                                   alt="Caption goes here"
                                   src="tour/8.png"
-                                  class="gallery-img" /></div>
+                                  class="gallery-img" /></div></a>
                             <div class="gallery-info__wrapper">
-                               <div class="heading-medium">3. Koh Ker</div>
+                               <div class="heading-medium">4. Koh Ker</div>
                             </div>
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper"><img data-swiper-parallax-x="0%" loading="lazy" alt="Photo caption"
+                            <div class="gallery-img__wrapper">
+                                <a href="#popup-ph"><img data-swiper-parallax-x="0%" loading="lazy" alt="Photo caption"
                              src="tour/10.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">5. Phare The Circus</div>
                             </div>
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper"><img data-swiper-parallax-x="0%" loading="lazy" alt="Photo caption"
+                            <div class="gallery-img__wrapper">
+                                <a href="#popup-cr"><img data-swiper-parallax-x="0%" loading="lazy" alt="Photo caption"
                              src="tour/11.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">6. Ceramic</div>
                             </div>
                          </div>
                          <div role="listitem" class="swiper-slide is-gallery">
-                            <div class="gallery-img__wrapper"><img data-swiper-parallax-x="0%" loading="lazy" alt="Photo caption"
+                            <div class="gallery-img__wrapper">
+                                <a href="#popup-ck"><img data-swiper-parallax-x="0%" loading="lazy" alt="Photo caption"
                              src="tour/12.png"
-                                  class="gallery-img" />
+                                  class="gallery-img" /></a>
                             </div>
                             <div class="gallery-info__wrapper">
                                <div class="heading-medium">7. Cooking Class</div>
@@ -1018,7 +1123,7 @@
                 </div>
               </div></a>
               <div id="socialnight">
-                <div style="padding-top: 1.5rem; padding-left: 0.5rem; color: white;"><p>Come and join us for making a new friend</p></div>
+                <div style="display: flex;"><div style="padding-top: 1.5rem; padding-left: 0.5rem; color: white; width: 70%;  ">Come and join us for making a new friend</div><div style="height: 5rem;"><img src="img/social.png" alt="" height="100%" style="position: absolute; right: 0" loading="lazy"></div></div>
               </div>
               <a href="#movienight" style="text-decoration: none;"><div style="position: relative; display: flex; margin-bottom: 0.7rem;">
                 <div class="aty-name">
@@ -1067,6 +1172,8 @@
                 <a href="#airport" style="text-decoration: none;"><p class="link2">Siem Reap Airport</p></a>
             </div>
             <div class="bus-right">
+                <div style="position: absolute; bottom: 5rem;"><img src="img/bus-point.png" alt="" width="100%" loading="lazy"></div>
+                <div style="position: absolute;"><img src="img/bg-bus.png" alt="" width="100%" loading="lazy"></div>
                     <div id="phnompenhday">
                         <div style="text-align: center; width: 100%; height: 1.5rem; background-color: rgba(204, 211, 217, 0.716); color: rgb(31, 61, 73);"><b>To Phnom Penh (Day Bus)</b></div>
                     <div class="card" style="max-width: 500px; height: 130px;">
