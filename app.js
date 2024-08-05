@@ -49,6 +49,8 @@ function showhide() {
 
   /* TOUR */
 
+  
+
   const gallerySlider = new Swiper(".swiper.is-gallery", {
     loop: false,
     slidesPerView: 1.3,
