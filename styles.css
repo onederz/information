@@ -567,7 +567,7 @@
         margin: 1rem;
         position: relative;
         background-color: #000000;
-        width: 140px;
+        max-width: 150px;
         height: 112px;
       }
 
