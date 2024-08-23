@@ -1,3 +1,21 @@
+var today=new Date,month=new Array;month[0]="January",month[1]="February",month[2]="March",month[3]="April",month[4]="May",month[5]="June",month[6]="July",month[7]="August",month[8]="September",month[9]="October",month[10]="November",month[11]="December";var month_name=month[today.getMonth()],day_of_month=today.getDate(),current_year=today.getFullYear(),dayOfMonthElement=document.getElementById("current_day"),currentMonthElement=document.getElementById("current_month"),currentYearElement=document.getElementById("current_year");!function(){currentMonthElement.innerHTML=month_name,dayOfMonthElement.innerHTML=day_of_month,currentYearElement.innerHTML=current_year}();
+/* date change */
+function showhide() {
+  var d = new Date();
+  var s = document.getElementsByClassName(d.getDay());
+  for (var i = 0; i < s.length; i++) {
+    s[i].style.display = 'block';
+  }
+}
+
+showhide();
+
+/* flip card */
+$('.card').click(function(e){
+  e.preventDefault();
+  $(this).toggleClass('flipped');
+})
+
 let list = document.querySelectorAll(".list");
 for (let i = 0; i < list.length; i++) {
   list[i].onclick = (e) => {
@@ -18,46 +36,29 @@ list.forEach((elements) => {
   });
 });
 
-
-/* flip card */
-$('.card').click(function(e){
-    e.preventDefault();
-    $(this).toggleClass('flipped');
-  })
-
-/* change bg color */
-
-$(".link2").click(function(){
-    $(".link2").css("background-color", "#344147");
-  $(this).css("background-color", "#ffffff49");
+const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 4000, // Change slides every 4 seconds
+      disableOnInteraction: false,
+    },
+    effect: 'fade', // Optional: add a fade effect
   });
 
-/* date change */
-function showhide() {
-    var d = new Date();
-    var s = document.getElementsByClassName(d.getDay());
-    for (var i = 0; i < s.length; i++) {
-      s[i].style.display = 'block';
-    }
-  }
-  
-  showhide();
-  
-  
-  var today=new Date,month=new Array;month[0]="January",month[1]="February",month[2]="March",month[3]="April",month[4]="May",month[5]="June",month[6]="July",month[7]="August",month[8]="September",month[9]="October",month[10]="November",month[11]="December";var month_name=month[today.getMonth()],day_of_month=today.getDate(),current_year=today.getFullYear(),dayOfMonthElement=document.getElementById("current_day"),currentMonthElement=document.getElementById("current_month"),currentYearElement=document.getElementById("current_year");!function(){currentMonthElement.innerHTML=month_name,dayOfMonthElement.innerHTML=day_of_month,currentYearElement.innerHTML=current_year}();
-  var tomorrow=new Date (today.getTime() + (24 * 60 * 60 * 1000)),month=new Array;month[0]="January",month[1]="February",month[2]="March",month[3]="April",month[4]="May",month[5]="June",month[6]="July",month[7]="August",month[8]="September",month[9]="October",month[10]="November",month[11]="December";var month_name=month[tomorrow.getMonth()],day_of_month=tomorrow.getDate(),current_year=tomorrow.getFullYear(),dayOfMonthElement=document.getElementById("current_day_tmr"),currentMonthElement=document.getElementById("current_month_tmr"),currentYearElement=document.getElementById("current_year_tmr");!function(){currentMonthElement.innerHTML=month_name,dayOfMonthElement.innerHTML=day_of_month,currentYearElement.innerHTML=current_year}();
-  var today=new Date,month=new Array;month[0]="January",month[1]="February",month[2]="March",month[3]="April",month[4]="May",month[5]="June",month[6]="July",month[7]="August",month[8]="September",month[9]="October",month[10]="November",month[11]="December";var month_name=month[today.getMonth()],day_of_month=today.getDate(),current_year=today.getFullYear(),dayOfMonthElement=document.getElementById("current_day_2"),currentMonthElement=document.getElementById("current_month_2"),currentYearElement=document.getElementById("current_year_2");!function(){currentMonthElement.innerHTML=month_name,dayOfMonthElement.innerHTML=day_of_month,currentYearElement.innerHTML=current_year}();
-  var tomorrow=new Date (today.getTime() + (24 * 60 * 60 * 1000)),month=new Array;month[0]="January",month[1]="February",month[2]="March",month[3]="April",month[4]="May",month[5]="June",month[6]="July",month[7]="August",month[8]="September",month[9]="October",month[10]="November",month[11]="December";var month_name=month[tomorrow.getMonth()],day_of_month=tomorrow.getDate(),current_year=tomorrow.getFullYear(),dayOfMonthElement=document.getElementById("current_day_tmr_2"),currentMonthElement=document.getElementById("current_month_tmr_2"),currentYearElement=document.getElementById("current_year_tmr_2");!function(){currentMonthElement.innerHTML=month_name,dayOfMonthElement.innerHTML=day_of_month,currentYearElement.innerHTML=current_year}();
-
-  /* TOUR */
-
-  
 
   const gallerySlider = new Swiper(".swiper.is-gallery", {
     loop: false,
-    slidesPerView: 1.3,
+    slidesPerView: 1.5,
     centeredSlides: true,
-    speed: 300,
+    speed: 400,
     grabCursor: true,
     parallax: true,
     /* autoplay: {
@@ -65,19 +66,16 @@ function showhide() {
       disableOnInteraction: false,
     },*/
   });
-  
+
   const gallerySlider2 = new Swiper(".swiper.is-gallery2", {
     loop: true,
-    slidesPerView: 1.4,
+    slidesPerView: 1.5,
     centeredSlides: true,
-    speed: 1000,
+    speed: 400,
     grabCursor: true,
     parallax: true,
-    autoplay: {
+    /* autoplay: {
       delay: 5000,
       disableOnInteraction: false,
-    },
+    },*/
   });
-
-
-  
