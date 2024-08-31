@@ -324,7 +324,7 @@ border: 1px solid #a3a0a0;
   .gallery-img__wrapper2 {
     position: relative;
     overflow: hidden;
-    width: 120%;
+    width: 105%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
     justify-content: center;
     align-items: center;
@@ -361,7 +361,7 @@ border: 1px solid #a3a0a0;
       &.swiper-slide-active {
         .gallery-img__wrapper {
           opacity: 1;
-          transform: scale(0.7);
+          transform: scale(0.6);
         }
         .gallery-info__wrapper {
           opacity: 1;
@@ -373,11 +373,12 @@ border: 1px solid #a3a0a0;
       position: relative;
       overflow: hidden;
       width: 160%;
-      margin-bottom: -1rem;
+      margin-top: -1rem;
+      margin-bottom: -1.8rem;
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.596);
       justify-content: center;
       align-items: center;
-      padding-top: 65%;
+      padding-top: 69%;
       border-radius: .75rem;
       opacity: 0.7;
       transform: scale(0.5);

@@ -56,7 +56,7 @@ const swiper = new Swiper('.swiper-container', {
 
   const gallerySlider = new Swiper(".swiper.is-gallery", {
     loop: false,
-    slidesPerView: 1.5,
+    slidesPerView: 1.3,
     centeredSlides: true,
     speed: 400,
     grabCursor: true,
